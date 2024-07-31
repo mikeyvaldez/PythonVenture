@@ -2,87 +2,18 @@
 
 import random
 
-stages = ['''
-       _______
-     |/      |
-     |      (_)
-     |      \|/
-     |       |
-     |      / |
-     |
-    _|___''', '''
-       _______
-     |/      |
-     |      (_)
-     |      \|/
-     |       |
-     |      / 
-     |
-    _|___''', '''
-      _______
-     |/      |
-     |      (_)
-     |      \|/
-     |       |
-     |      
-     |
-    _|___''', '''
-      _______
-     |/      |
-     |      (_)
-     |      \|/
-     |       |
-     |      
-     |
-    _|___''', '''
-      _______
-     |/      |
-     |      (_)
-     |      \|/
-     |       
-     |      
-     |
-    _|___''', '''
-      _______
-     |/      |
-     |      (_)
-     |       |/
-     |       
-     |      
-     |
-    _|___''', '''
-      _______
-     |/      |
-     |      (_)
-     |       |
-     |       
-     |      
-     |
-    _|___''', '''
-      _______
-     |/      |
-     |      (_)
-     |       
-     |       
-     |      
-     |
-    _|___''', '''
-      _______
-     |/      |
-     |      
-     |       
-     |       
-     |      
-     |
-    _|___''']
+from hangmanWordList import word_list
+from hangmanArt import logo
+from hangmanArt import stages
 
 end_of_game = False
-word_list = ["ardvark", "baboon", "camel"]
 chosen_word = random.choice(word_list)
 word_length = len(chosen_word)
 
 # Set lives to 6
 lives = 6
+
+print(logo)
 
 # Line for Testing code
 print(f'Psst, the solution is {chosen_word}')
