@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import random
-
 from hangmanWordList import word_list
 from hangmanArt import logo
 from hangmanArt import stages
