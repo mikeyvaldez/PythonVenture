@@ -2,8 +2,9 @@
 
 import math
 
-
+print("Please enter the Height of the wall in meters:")
 test_h = int(input())   # Height of wall (m)
+print("Please enter the Width of the wall meters:")
 test_w = int(input())     # Width of wall  (m)
 coverage = 5
 
