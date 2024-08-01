@@ -9,14 +9,27 @@ shift = int(input("Type the shift number:\n"))
 
 # todo-1: Create a function called 'encrypt' that takes the 'text' and 'shift' as inputs.
 def encrypt(plain_text, shift_amount):
-    # todo-2: Inside the 'encrypt' function, shift each letter of the 'text' forwards in the alphabet by the shift amount and print the encrypted text.  
     cipher_text = ""
     for letter in plain_text:
         position = alphabet.index(letter)
         new_position = position + shift_amount
-        new_letter = alphabet[new_position]
-        cipher_text += new_letter
-    print(f"The encoded text is {cipher_text}")    
+        cipher_text += alphabet[new_position]
+    print(f"The encoded text is {cipher_text}")
 
-# todo-3: Call the encrypt function and pass in the user inputs. You should be able to test the code and encrypt a message.
-encrypt(plain_text = text, shift_amount = shift)
+# Createe a different function called 'decrypt' that takes the 
+# 'text' and 'shift' as inputs.
+def decrypt(cipher_text, shift_amount):
+    plain_text = ""
+    for letter in cipher_text:
+        position = alphabet.index(letter)
+        new_position = position - shift_amount
+        plain_text += alphabet[new_position]
+    print(f"The decoded text is {plain_text}")
+    # inside the 'decrypt' function, shift each letter of the 'text' *backwards* in
+    # the alphabet by the shift amount and print the decrypted text.
+
+if direction == "encode":
+    encrypt(plain_text = text, shift_amount = shift)
+elif direction == "decode":
+    decrypt(cipher_text = text, shift_amount = shift)
+
