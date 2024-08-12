@@ -10,7 +10,7 @@ question_bank = []
 
 
 for quest in question_data:
-    question = Question(quest['text'], quest['answer'])
+    question = Question(quest['question'], quest['correct_answer'])
     question_bank.append(question)
     
 
@@ -20,4 +20,4 @@ while quiz.still_has_questions:
     quiz.next_question()
 
 print("You've completed the quiz")
-print(f"Your final score was: {QuizBrain.score}/{QuizBrain.question_number}")
+print("Your final score was: {0}/{1}".format(quiz.score, quiz.question_number))
