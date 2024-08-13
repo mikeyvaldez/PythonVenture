@@ -1,5 +1,14 @@
 #!/usr/bin/env python3
 
+################################################################################################
+# In late  2019, the US Court of Appeals denied LinkedIn's request to prevent
+# HiQ, an analytics company, from scraping its data.
+
+# The decision was a historic moment in the data privacy and data regulation
+# era. It showed that any data that is 'PUBLICLY AVAILABLE AND NOT COPYRIGHTED' is 
+# fair game for web scrapers/crawlers
+################################################################################################
+
 
 
 from bs4 import BeautifulSoup # type: ignore
