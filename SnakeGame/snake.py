@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from turtle import Screen, Turtle
+from turtle import Turtle
 
 
 STARTING_POSITIONS = [(0, 0), (-20, 0), (-40, 0)]
@@ -14,7 +14,7 @@ RIGHT = 0
 
 class Snake:
 
-    def __init__(self):
+    def __init__(self): # constructor
         self.segments = []
         self.create_snake()
         self.head = self.segments[0]
