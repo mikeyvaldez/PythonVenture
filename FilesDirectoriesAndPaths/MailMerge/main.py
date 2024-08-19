@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
-PLACEHOLDER = "[name]"
+PLACEHOLDER = "[name]"    # This is a contant variable which targets the string [name]
 
-with open("./Input/Names/invited_names.txt") as names_file:
+with open("./Input/Names/invited_names.txt") as names_file:     # creates a list of all the text in the names file using readlines()
     names = names_file.readlines()    
 
 with open("./Input/Letters/starting_letter.txt") as letter_file:
