@@ -2,7 +2,7 @@
 
 
 # This is the key word structure for looping through a dictionary
-# {new_key:new_value for (key, value) in dictionar.items()}
+# {new_key:new_value for (key, value) in dictionary.items()}
 
 
 
