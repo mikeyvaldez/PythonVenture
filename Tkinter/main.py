@@ -18,8 +18,4 @@ my_label.pack()    # need the .pack() method for the label to appear on the scre
 
 
 
-
-
-
-
 window.mainloop()    # mainloop() keeps the gui open, basically a while loop
